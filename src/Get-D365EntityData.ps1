@@ -36,7 +36,7 @@ function Get-D365EntityData {
                                                     -Verbose
 
             if ($null -ne $ExportResult) {
-                Write-Host "🟢 Exporting $($SMRBIVendTrans.Length) rows..."
+                Write-Host "🟢 Exporting $($EntityName.Length) rows..."
                 $ExportResult | Export-Csv "$PWD\$($Company)-$($EntityName).csv" -NoTypeInformation `
                                                                                  -Append `
                                                                                  -Verbose
